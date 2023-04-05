@@ -1,0 +1,87 @@
+html{
+  height: 100%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @extend %rubik-400;
+  font-size: 20px;
+  line-height: 150%;
+  background-color: $bg;
+  height: 100%;
+  color: $dark;
+}
+
+.body--active{
+  overflow: hidden;
+}
+
+a{
+  color: $dark;
+}
+
+.main{
+  flex-grow: 1;
+}
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title{
+  @extend %rubik-500;
+  font-size: 36px;
+  line-height: 130%;
+  color: $darkblue;
+}
+
+.sr-only{
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  color: $darkblue;
+}
+
+.btn-nohover{
+  &:hover{
+    transition: none !important;
+    background-color: $orange !important;
+    color: #fff !important;
+    outline: none !important;
+    border-radius: 5px !important;
+    box-shadow: none !important;  
+    * {
+      fill: #fff !important;
+    }
+  }
+  &:focus{
+    outline: none !important;
+  }
+}
+
+.product-nohover{
+  &:hover {
+      transition: none !important;
+      box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1) !important;
+    }
+}

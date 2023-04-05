@@ -1,0 +1,44 @@
+$orange: #FF6838;
+$dark: #31352B;
+$darkblue: #363853;
+$bg: #F9FAFF;
+$border-dark: #C2C2C2;
+$border-light: #ECECEC;
+$focus: rgba(255, 122, 80, 0.1);
+
+%rubik-300{
+  font-family: "Rubik-Light", sans-serif;
+  font-weight: 300;
+}
+%rubik-400{
+  font-family: "Rubik-Regular", sans-serif;
+  font-weight: 400;
+}
+%rubik-500{
+  font-family: "Rubik-Medium", sans-serif;
+  font-weight: 500;
+}
+
+%outline{
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: rgba(255, 150, 116, 1);
+  border-radius: 5px;
+}
+
+%btn{
+  background-color: $orange;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+%checkbox-hidden,
+%radio-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
